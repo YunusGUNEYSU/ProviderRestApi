@@ -35,6 +35,7 @@ class _ReqResViewState extends State<ReqResView> with ProjectDioMixin {
           context.read<LightTheme>().changeTheme();
         },),
         appBar: AppBar(
+          leading: Text('AA'),
           actions: [IconButton(onPressed: (){
             Provider.of<ReqResProvider>(context, listen: false);
             context.read<ReqResProvider>().saveToLocole(context.read<ResourceContext>());
